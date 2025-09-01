@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stream Selection</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Search Bar -->
+  <header>
+    <input type="text" id="search" placeholder="Search">
+  </header>
+
+  <!-- Stream Selection -->
+  <section class="stream-selection">
+    <h2>Stream Selection</h2>
+    <p>Choose the stream you are interested in</p>
+
+    <div class="streams">
+      <button class="stream-btn" data-stream="science">Science</button>
+      <button class="stream-btn" data-stream="commerce">Commerce</button>
+      <button class="stream-btn" data-stream="humanities">Humanities</button>
+    </div>
+    <button class="continue-btn">Continue</button>
+  </section>
+
+  <!-- Stream Details -->
+  <section id="details" class="hidden">
+    <h2 id="stream-title"></h2>
+    <p>Choose what you are interested in</p>
+
+    <div class="options" id="stream-options"></div>
+
+    <button class="continue-btn">Continue</button>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <footer>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">College</a>
+      <a href="#">Scholarship</a>
+      <a href="#">Accounts</a>
+    </nav>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

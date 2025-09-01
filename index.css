@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fdfdfd;
+}
+
+/* Search */
+header {
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+#search {
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Stream Section */
+.stream-selection {
+  padding: 20px;
+}
+
+.streams {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.stream-btn {
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.stream-btn:hover {
+  background: #ffe0b2;
+}
+
+.continue-btn {
+  background: orange;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.continue-btn:hover {
+  background: darkorange;
+}
+
+/* Stream Details */
+#details {
+  padding: 20px;
+}
+
+.options {
+  display: grid;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.option-card {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.option-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.option-card p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+nav a.active {
+  color: orange;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
