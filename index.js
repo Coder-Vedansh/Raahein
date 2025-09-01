@@ -1,18 +1,18 @@
-// Stream Data
+// ---------- STREAM SYSTEM ---------- //
 const streams = {
   science: [
     { title: "Courses", desc: "Explore degree options such as B.Sc., B.Tech., M.Sc." },
-    { title: "Exams", desc: "Prepare for exams like JEE, NEET, and CUET to pursue higher studies in Science" },
-    { title: "Career Options", desc: "Find the right career – Doctor, Engineer, Scientist, Analyst" }
+    { title: "Exams", desc: "Prepare for exams like JEE, NEET, and CUET." },
+    { title: "Career Options", desc: "Doctor, Engineer, Scientist, Analyst" }
   ],
   commerce: [
     { title: "Courses", desc: "Explore degree options after Commerce such as B.Com." },
     { title: "Exams", desc: "Prepare for exams like CA, CS, and CMA." },
-    { title: "Career Options", desc: "Banking, accounting, finance, and management roles" }
+    { title: "Career Options", desc: "Banking, Accounting, Finance, Management" }
   ],
   humanities: [
-    { title: "Courses", desc: "Explore degree options like BA, BBA, and Fine Arts." },
-    { title: "Exams", desc: "Prepare for exams like CUET, CLAT, and UPSC" },
+    { title: "Courses", desc: "Explore degree options like BA, BBA, Fine Arts." },
+    { title: "Exams", desc: "Prepare for exams like CUET, CLAT, UPSC." },
     { title: "Career Options", desc: "Lawyer, Journalist, Designer, Civil Servant" }
   ]
 };

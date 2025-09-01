@@ -1,0 +1,35 @@
+/* College Section */
+.college-section {
+  padding: 20px;
+  text-align: left;
+}
+
+.college-list {
+  display: grid;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.college-card {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.college-card:hover {
+  transform: scale(1.02);
+}
+
+.college-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #ff5722;
+}
+
+.college-card p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}

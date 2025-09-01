@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarships - Career Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // ✅ Protect page (redirect if not logged in)
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Header with Search -->
+  <header>
+    <input type="text" id="scholarship-search" placeholder="Search Scholarships">
+  </header>
+
+  <!-- Scholarship List Section -->
+  <section class="scholarship-section">
+    <h2>Available Scholarships</h2>
+    <div class="scholarship-list" id="scholarship-list">
+      <!-- JS will populate scholarships -->
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <footer>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="college.html">College</a>
+      <a href="scholarship.html" class="active">Scholarship</a>
+      <a href="#">Accounts</a>
+    </nav>
+  </footer>
+
+  <script src="scholarship.js"></script>
+</body>
+</html>

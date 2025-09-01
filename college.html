@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colleges - Career Portal</title>
+  <link rel="stylesheet" href="college.css">
+  <script>
+    // ✅ Protect page (redirect to login if not logged in)
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Header with Search -->
+  <header>
+    <input type="text" id="college-search" placeholder="Search Colleges">
+  </header>
+
+  <!-- College List Section -->
+  <section class="college-section">
+    <h2>Top Colleges</h2>
+    <div class="college-list" id="college-list">
+      <!-- JS will populate colleges -->
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <footer>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="college.html" class="active">College</a>
+      <a href="#">Scholarship</a>
+      <a href="#">Accounts</a>
+    </nav>
+  </footer>
+
+  <script src="college.js"></script>
+</body>
+</html>

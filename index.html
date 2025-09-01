@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stream Selection</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Career Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // ✅ Redirect back to login if not logged in
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
 </head>
 <body>
 
-  <!-- Search Bar -->
+  <!-- Your existing portal content here -->
   <header>
     <input type="text" id="search" placeholder="Search">
   </header>
 
-  <!-- Stream Selection -->
   <section class="stream-selection">
     <h2>Stream Selection</h2>
     <p>Choose the stream you are interested in</p>
-
     <div class="streams">
       <button class="stream-btn" data-stream="science">Science</button>
       <button class="stream-btn" data-stream="commerce">Commerce</button>
@@ -26,21 +30,17 @@
     <button class="continue-btn">Continue</button>
   </section>
 
-  <!-- Stream Details -->
   <section id="details" class="hidden">
     <h2 id="stream-title"></h2>
     <p>Choose what you are interested in</p>
-
     <div class="options" id="stream-options"></div>
-
     <button class="continue-btn">Continue</button>
   </section>
 
-  <!-- Bottom Navigation -->
   <footer>
     <nav>
-      <a href="#" class="active">Home</a>
-      <a href="#">College</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="college.html">College</a>
       <a href="#">Scholarship</a>
       <a href="#">Accounts</a>
     </nav>
